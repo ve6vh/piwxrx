@@ -1,0 +1,31 @@
+{
+	"system": {
+		"ipnet": 10,
+		"reset": "xyzzy"
+	},
+	"pbx" : {
+		"pbx ext": 5180,
+		"msg ext": 5180,
+		"secret": "<Sip login secret>",
+		"url": "<your PBX address goes here>"	
+	},
+	"email" : {
+		"interval" : 15,
+		"accounts" : [
+			{
+				"ssl"  : true,
+				"host" : "local-email.local.mesh", 
+				"port" : "995", 
+				"user" : "sipportal", 
+				"password" : "secret2"
+			},		
+			{
+				"ssl"  : true,
+				"host" : "imap.isp.ca", 
+				"port" : "995", 
+				"user" : "emailportal", 
+				"password" : "secret2"
+			}
+		]
+	}
+}
