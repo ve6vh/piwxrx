@@ -14,11 +14,20 @@ device. It is recommended to run as a linux service.
 The upper layers are written in Java, and require the OpenJDK-11 run time enviromnent to operate. On slower systems such
 as a Raspberry Pi or other devices that use an SD card as it main disk, it is recommended that the class file hierarchy
 be preserved. For systems with a faster hard drive, the jar file can be used instead. The code, by definition, is portable.
+The files to implement it on a Pi are contained in the .zip file. Download it, unzip and copy to your target system.
 
 The lower level (time critical) layers are written in C, and can be ported to any target system by using the appropriate
-C compiler. The source code of the JNI (Java Native Interface) layer is supplied in the JNI directory. 
+C compiler. The source code of the JNI (Java Native Interface) layer is supplied in the JNI directory. The precompiled file
+is for ARM architecture devices only.
 
 To customize for a specific application, consult the documentation supplied. The current revision level is 4.4.
+
+The tarball PiWxRx68.tar.gz is a self-contained implementation for X86 linux systems. Simply unzip it, customize the xml
+file and it is ready to go. 
+
+There are two files used to run it, runpiwx and runpiwx.stdout. The former writes any errors to a file called NOAA.log, 
+inclding a decoded messages in the 'dump' mode. The latter will write everything to the console, and is useful in setup
+and debugging.
 
 PiWxRxWeb is an extension to the Pi receiver to service mutliple receivers. It runs under Apache Tomcat 9 as a website,
 where receivers can post NOAA messages to an SQL database. Subscribers can log in to their own account and select which
