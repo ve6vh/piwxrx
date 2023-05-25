@@ -22,7 +22,7 @@ is for ARM architecture devices only.
 
 To customize for a specific application, consult the documentation supplied. The current revision level is 4.4.
 
-The tarball PiWxRx68.tar.gz is a self-contained implementation for X86 linux systems. Simply unzip it, customize the xml
+The tarball PiWxRx86.tar.gz is a self-contained implementation for X86 linux systems. Simply unzip it, customize the xml
 file and it is ready to go. 
 
 There are two files used to run it, runpiwx and runpiwx.stdout. The former writes any errors to a file called NOAA.log, 
