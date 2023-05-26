@@ -24,7 +24,7 @@ To customize for a specific application, consult the documentation supplied. The
 
 The tarball PiWxRx86.tar.gz is a self-contained implementation for X86 linux systems. Simply unzip it, customize the xml
 file and it is ready to go. As of revision 4.4.1, more than one instance can be run on the same machine, consult the
-documentation for more details.
+documentation for more details. It is intended to be installed in /etc/PiWxRx.
 
 There are two files used to run it, runpiwx and runpiwx.stdout. The former writes any errors to a file called NOAA.log, 
 inclding a decoded messages in the 'dump' mode. The latter will write everything to the console, and is useful in setup
