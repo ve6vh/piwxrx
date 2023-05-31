@@ -26,6 +26,10 @@ The tarball PiWxRx86.tar.gz is a self-contained implementation for X86 linux sys
 file and it is ready to go. As of revision 4.4.1, more than one instance can be run on the same machine, consult the
 documentation for more details. It is intended to be installed in /etc/PiWxRx.
 
+A problem was encountered with an incompatibility when using JDK11, in the email mode due to libraries that had been
+deprecated. This problem has been rectified by using a different JAR file, PiWxRx86_JDK11.tar.gz. Installation is the same
+as the original.
+
 There are two files used to run it, runpiwx and runpiwx.stdout. The former writes any errors to a file called NOAA.log, 
 inclding a decoded messages in the 'dump' mode. The latter will write everything to the console, and is useful in setup
 and debugging.
