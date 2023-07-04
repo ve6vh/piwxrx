@@ -4,15 +4,5 @@ different, and expand the tarball piwxrxbin.tar.gz, it will create a new bin fol
 class folder. Do a visual check to ensure that the directory structure is the same as the old version. 
 No new class files have been added.
 
-To install, text edit the PiWxRx.xml file to suit as usual. Add a line to the <forwarding> stanza to
-include the line 	bodytemplate="emailbody.xml" after the subject line prototype. The current template is
-ready to go and mimics the existing e-mail format. If the bodytemplate entry is missing, the default format
-will be used.
+The documenatation has been updated to include this feature, and an example template file is also here.
 
-The template entries are:
-<Header> The first line of the message
-<Detail> Repeated for every same code
-<Trailer>At the end of the message
-<PostScript>A extra line at end of the email message, for a disclaimer, etc. Can be omitted.
-
-Run a usual.
