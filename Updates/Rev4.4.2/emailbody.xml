@@ -1,6 +1,0 @@
-<EmailBody>
-	<Header>@A has issued a @B bulletin at @T local time on @D @n For the following area: @n</Header>
-	<Detail>@N</Detail>
-	<Trailer>This bulletin is in effect for the next @P hours @n@n</Trailer>
-	<PostScript>This is a rebroadcast of a NOAA message</PostScript>
-</EmailBody>
