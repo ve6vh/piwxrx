@@ -20,8 +20,8 @@ The lower level (time critical) layers are written in C, and can be ported to an
 C compiler. The source code of the JNI (Java Native Interface) layer is supplied in the JNI directory. The precompiled file
 is for ARM architecture devices only.
 
-To customize for a specific application, consult the documentation supplied. The current revision level is 4.4.1. A prerelease
-of 4.4.2 is now available, the new feature is email body message templating.
+To customize for a specific application, consult the documentation supplied. The current revision level is 4.4.2. The PiWxRX.jar
+file can be used to update an existing version to the latest revision.
 
 The tarball PiWxRx86.tar.gz is a self-contained implementation for X86 linux systems. Simply unzip it, customize the xml
 file and it is ready to go. As of revision 4.4.1, more than one instance can be run on the same machine, consult the
