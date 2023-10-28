@@ -14,7 +14,10 @@ device. It is recommended to be run as a linux service.
 The upper layers are written in Java, and require the OpenJDK-11 run time enviromnent to operate. On slower systems such
 as a Raspberry Pi or other devices that use an SD card as it main disk, it is recommended that the expanded class file hierarchy
 be used instead of a jar file. For systems with a faster hard drive, the jar file can be used. The code, by definition, is portable.
-The files to implement it on a Pi are contained in the .tar file. Download it, unzip and copy to your target system.
+
+For the raspberry Pi, all files are contained in the archive PiWxRx.tar.gz. Download and unzip it, copy the files to /etc/PiWxRx
+and start it up with the runpiwx.stdout. It comes preconfigured to decode a message in a disk file. If you see the decoded message,
+all is well. Follow the instructions in the manual to complete the installation.
 
 The lower level (time critical) layers are written in C, and can be ported to any target system by using the appropriate
 C compiler. The source code of the JNI (Java Native Interface) layer is supplied in the JNI directory. The precompiled file
