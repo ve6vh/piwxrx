@@ -18,7 +18,7 @@ The current revision level is 4.4.2, older versions can be upgraded.
 Pick ONE of the following four archives:
 
 PiWxRx.tar.gz is for the raspberry Pi only and is at 4.4.2 already. Download and unzip it, copy the files to the recommended directory
-and run it. If you see the  decoded message, on the screnn, all is well. Follow the instructions in the manual to complete the installation.
+and run it. If you see the  decoded message, on the screen, all is well. Follow the instructions in the manual to complete the installation.
 
 PiWxRx86.tar.gz is a self-contained implementation for X86 linux systems. As of revision 4.4.1, more than one instance 
 can be run on the same machine, consult the documentation for more details. An upgrade to 4.4.2 is contained in PiWxRx.jar file.
