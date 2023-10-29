@@ -1,0 +1,20 @@
+<EmailBody>
+	<Header>@A has issued a @B at@n@T local time on @D for the following area(s):@n@n</Header>
+	<Detail>@N</Detail>
+	<Trailer>@nThis weather alert is in effect for the next @P hours</Trailer>
+	<PostScript>
+----------
+<CALLSIGN> can be heard on MeshPhone <MESHPHONE_NUMBER>.
+----------
+Disclaimer: Timeliness of this alert can not be guaranteed,
+due to the store- and-forward processes used in message
+forwarding. Timeliness can only be guaranteed through direct
+reception of the Over The Air signal from the NOAA Weather
+Radio/Environment Canada transmitter. These alerts via mesh
+networking or packet radio should not be relied upon for the
+safety of life or property.
+----------
+Powered by PiWxRx @v
+----------
+	</PostScript>
+</EmailBody>
