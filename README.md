@@ -13,31 +13,13 @@ is preconfigured to dump messages to the console from a disc file for ease of te
 
 It is intended to be installed in /etc/PiWxRx, so after downloading and expanding the archive, copy all the files there.
 
-The current revision level is 4.4.2, older versions can be upgraded.
+The current suppported revision level is 4.4.2, code can be found in that directory.
 
-Pick ONE of the following four archives:
-
-PiWxRx.tar.gz is for the raspberry Pi only and is at 4.4.2 already. Download and unzip it, copy the files to the recommended directory
-and run it. If you see the  decoded message, on the screen, all is well. Follow the instructions in the manual to complete the installation.
-
-PiWxRx86.tar.gz is a self-contained implementation for X86 linux systems. As of revision 4.4.1, more than one instance 
-can be run on the same machine, consult the documentation for more details. An upgrade to 4.4.2 is contained in PiWxRx.jar file.
-
-PiWxRx86_JDK11.tar.gz is a later version of 4.4.1 for x86 machines for JDK11. problem was encountered with an incompatibility 
-in the email mode due to libraries that had been deprecated. Installation is the same as the original, however also replace the file
-PiWxRx.jar with the latest in this repo for 4.4.2.
-
-PiWxRx_Odroid.tar.gz is a version of 4.4.1 for the Odroid C4, a 64-bit version of the raspberry Pi. The archive is at 4.4.1, add the
-upgrade file for 4.4.2.
-
-Once you have installed the correct version, do NOT modify anyything unti you have run the code using runpiwx.stdout. You should see
-the decoded message on the console. After that, you can try customizing the forwarding, but stil using the same disk file source,
-and see if you get an email message. If you do, then you can set up the audio source, and modify the JSON database for your local area.
-
-Other platforms
-===============
-A custom version can be made for a different processor by recompiling the native code in the JNI library. Do not attempt
-unless you are familiar with developing C code for the system of choice. The Java code will run as it is portable by definition.
+How To Install
+==============
+Copy all the files from the etc directory to /etc/PiWxRx, add the appropriate object code from the repo. Before making
+any configuration changes, run the file 'piwxrx.stdout'. If it is successful, you should see a decoded tornado watch
+on the console. Consult the documentation on how to configure the xml file going forward.
 
 PIWxRXWeb
 =========
