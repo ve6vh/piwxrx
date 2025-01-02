@@ -1,4 +1,8 @@
-This directory contains the current released and supported code, at rev 4.4.2.
+The archives in this repository are for linux machines only such as the Raspberry Pi, X86 based machines and the Odroid C4. It
+is preconfigured to dump messages to the console from a disc file for ease of testing. These are the current supported
+version, 4.4.2.
+
+It is intended to be installed in /etc/PiWxRx, so after downloading and expanding the archive, copy all the files there.
 
 Pick ONE of the following four archives:
 
