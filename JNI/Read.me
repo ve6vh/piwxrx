@@ -1,0 +1,5 @@
+This directory contains the source for the JNI (Java Native Interface) code. It contains the interface
+to the radio/SDR module, FSK demodulator, and RTP code for Asterisk. It interfaces with either GNU radio
+using stdin, or a USB based radio using an off the shelf interface that is supported by ALSA.
+
+To port to a new platform, simple recompile the code with the enclosed makefile.
