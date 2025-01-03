@@ -29,4 +29,4 @@ messages are appropriate for them from the database. Decoded messages are e-mail
 and may also be sent to a SIP phone using an e-mail to SIP portal. The portal attaches to a dedicated extension on an
 asterisk server, which must be enabled for SIP messaging. The portal and destination phone must be on the same server.
 
-For support, e-mail ve6vh@ve6vh.org.
+For support, e-mail ve6vh (at) ve6vh (dot) org.
