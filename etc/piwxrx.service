@@ -1,0 +1,14 @@
+[Unit]
+Description=PiWxRx_Service
+
+[Service]
+WorkingDirectory=/etc/piwxrx
+ExecStart=/etc/piwxrx/runpiwx
+
+SuccessExitStatus=143
+TimeoutStopSec=10
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

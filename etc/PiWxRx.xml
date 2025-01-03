@@ -1,0 +1,69 @@
+<PiWxRx>
+ <!--
+	This is a minimal configuration file to use the USB dongle and gnu radio
+	as the audio source. Messages are interpreted, and dumped to the screen
+	All versions have to load the Java Native Interface (JNI) libary
+ -->
+	<system jni="yes" ipnet="10" libname="piwxrx"/>
+
+ <!--
+	The next stanza identifies the audio source. There are three possibilities:
+	an RTL dongle, USB port or a canned audio file. The active configuration is 
+	for an audio dongle on 162.4MHz, however you can substitute on of the following
+	instead.
+ 	 <source cmdline="local/filereader -l -uc 1 -g 0" /> 
+	 <source cmdline="/usr/bin/rtl_fm -M fm -f 162.4M -g 38 -"/> 
+ -->
+ 	 <source cmdline="local/filereader -l -f rx48.raw" /> 
+<!--
+	As of V4.0, the SIP messaging extension is now specified in the pbx stanza,
+	well as the RTP port. The previous messaging stanza has been deprecated.
+-->
+	<pbx ext="5284" url="10.66.49.34:5060" secret="pbx_secret" rtpport="12557" msgext="5289"></pbx>
+
+<!--	This stanza now covers all of the forwarding methods. All require at least
+	the SAME database name, and one of the following forwarding schemes:
+
+	dump	dumps to the console, requires no further arguments.
+	
+	sip	sends the raw message to a SIP receiver as a text message for
+		further processing. Msgext in the pbx stanza has to be specified.
+
+	email	sends the formatted message to an email address. Depending on the 
+		server, authentication may be required. If so, set "auth" to "yes"
+		and enter the mail user and password, even if they are the same
+		as the toaddress. The protcol parameter is used to specify
+		the message formatting, which can be 'plain' or 'html'. Default
+		is html.
+
+	post	posts the message to a website, either as an HTTP post or using
+		the SOAP protocol. The server address, port, protocol, pagename
+		must be specified for both, and for SOAP the XML soap file and
+		webmethod must also be specified
+	
+-->
+
+  <forwarding 
+    originator="XLF339" 
+    database="SameDB.json"
+	method="dump"
+
+	serveraddr="10.48.197.216"
+	port="8080"
+
+	toaddress="to@messageRx.com"	
+	replyaddr="noreply@piwxrx.org"
+	subjectline="Message from @A at @O"
+
+	auth="no"						
+	authuser="mailuser@piwxrx.org"	
+	authpasswd="s3cretw0rd"			
+
+	protocol="http"	
+	pagename="PIWxRxWeb/alertservice"	
+	
+	xmlcmd="alertpost.xml"		
+	webmethod="postsame"
+	
+	/>
+</PiWxRx>

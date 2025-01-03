@@ -1,0 +1,4 @@
+#!/bin/bash
+export LD_LIBRARY_PATH="/usr/local/lib"
+date -u >> /home/pi/piwxrx/NOAA.log
+/usr/bin/java -cp "/home/pi/piwxrx/bin:/home/pi/piwxrx/lib/*" PiWxRx -d 800 -X /home/pi/piwxrx/PiWxRx.xml 2>>/home/pi/piwxrx/NOAA.log
